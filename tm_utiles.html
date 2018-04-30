@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+  <head>
+    <meta charset=utf-8 />
+    <link rel="stylesheet" type="text/css" href="tm_style_2.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="tm_menu_nav.css" media="screen" />
+    <title>Noticias de Tenis de Mesa - Utilidades</title>	
+	<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/fadeslideshow.js"></script>
+	<script type="text/javascript" src="js/img_banner.js"></script>
+	<script languaje="javascript" type="text/javascript">
+	function calcletra(dni)
+	{
+	var JuegoCaracteres="TRWAGMYFPDXBNJZSQVHLCKET";
+	var Posicion= dni % 23;
+	var Letra = JuegoCaracteres.charAt(Posicion);
+	return Letra;
+	}
+</script>	
+  </head>
+  
+  <body>
+    <div id="page">  
+	    <header>
+			<table><tr>
+			<td><div id="banner"></div></td>
+			<td><h1>Ping Pong</h1></td>
+			</table>
+		</header>
+	
+        <nav>
+            <ul>
+                <li><a href="tm_index.html" title="Home">Home</a></li>
+                <li><a href="tm_historia_0.html" title="Historia">Historia<span>^</span></a>
+                    <ul>
+                        <li><a href="tm_historia_1.html" title="Nacimiento">Nacimiento</a></li>
+                        <li><a href="tm_historia_2.html" title="Desarrollo">Desarrollo</a></li>
+                        <li class="ultimo"><a href="tm_historia_3.html" title="Competiciones">Competiciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="tm_jugadores.html" title="Jugadores M&iacute;ticos">Jugadores M&iacute;ticos</a></li>
+                <li><a href="tm_estilos.html" title="Estilos">Estilos de Juego</a></li>
+                <li><a href="#" title="Reglamentos">Reglamentos<span>^</span></a>
+                    <ul>
+                        <li><a href="pdfs/reglamento_control_raquetas.pdf" target="_blank" title="Control de Raquetas">Control de Raquetas</a></li>
+                        <li class="ultimo"><a href="pdfs/reglamento.pdf"  target="_blank" title="Reglamento">Reglamento</a></li>
+                    </ul>
+                </li>
+                <li><a href="tm_marcas.html" title="Marcas">Marcas</a></li>
+                <li><a href="tm_utiles.html" title="Campeonatos">Utilidades<span>^</span></a>
+                    <ul>
+                        <li><a href="paleta/index.html" target="_blank" title="Paleta">Paleta</a></li>
+                        <li><a href="#" title="Tool 2">Tool 2</a></li>
+                        <li class="ultimo"><a href="#" title="Tool 3">Tool 3</a></li>
+                    </ul>
+				</li>
+                <li><a href="#" title="about">about</a></li>
+            </ul>
+        </nav>
+		<br /><br /><br />
+		
+		
+	    <article>
+	    	<section>
+	    		<h1>Seleccion de Utilidades Varias</h1>
+			</section>
+    	
+	    	<section>
+	    		<h1>Cortitos</h1>
+				<form name="letradni" action="">
+				Calcula la letra del NIF<br>
+				DNI:<input type="text" name="numdni" maxlenght="9" size="9">
+				<input type="text" name="letra" size="1" readonly>
+				<input type="button" value="Ok" onclick="document.letradni.letra.value=calcletra(document.letradni.numdni.value);">
+				</form> 
+			</section>
+		
+	    </article>
+
+	    <footer>
+			<div align="center">
+	    	<p>Creado por <a href="http://www.nasiopacurra.es/">NasioPaCurra</a>. 
+			Newspaper layout adaptado desde <a href="http://dev.opera.com/articles/view/seven-web-fonts-showcases/">Daniel Davis</a>. 
+			Contenedor de Video usado <a href="http://www.webmproject.org/">WebM</a> 
+			</p>
+			</div>
+	    </footer>
+	    
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+var mygallery=new fadeSlideShow({
+	wrapperid: "banner", //ID of blank DIV on page to house Slideshow
+	dimensions: [735, 175], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	imagearray: [
+		["img_banner/image1.jpg", "", "", "Elena en el Interterritorial León 2008"],
+		["img_banner/image2.jpg", "", "", "Mireia vs Alicia Jiménez en el Interterritorial León 2008"],
+		["img_banner/image3.jpg", "", "", "Manu Lozano en el Interterritorial León 2008"],
+		["img_banner/image4.jpg", "", "", "Pedro López en el Interterritorial León 2008"],
+		["img_banner/image5.jpg", "", "", "Manu Lozano en el Interterritorial León 2008"],
+		["img_banner/image6.jpg", "", "", "Pedro López en el Interterritorial León 2008"],
+		["img_banner/image7.jpg", "", "", "Kristina y Eva"],
+		["img_banner/image8.jpg", "", "", "Cto. de Madrid 'Leganés 2008"],
+		["img_banner/image9.jpg", "", "", "Laura, Elena y Sara"],
+		["img_banner/image10.jpg", "", "", "Pedro, Cto. Madrid 2008 y Rodrigo"],
+		["img_banner/image11.jpg", "", "", "Jorge, Soko y Carlos"],
+		["img_banner/image12.jpg", "", "", "Cto. de Madrid Leganés 2008"],
+		["img_banner/image13.jpg", "", "", "María y Adrián"],
+		["img_banner/image14.jpg", "", "", "Elena, Sara, María y César"],
+		["img_banner/image15.jpg", "", "", "Celia, Denissa, Eduardo, Imanol y Laura"],
+		["img_banner/image16.jpg", "", "", "Borja, Adrián, Jaime, Ángel, Rodrigo y Diego"],
+		["img_banner/image17.jpg", "", "", "Elena en el Cto. España Alevín Las Palmas 2009"],
+		["img_banner/image18.jpg", "", "", "Patricia, Mireia, Elena y Andrea en el Cto. España Benjamín/Alevín Las Palmas 2009"],
+		["img_banner/image19.jpg", "", "", "Podiums en el Cto. España Benjamín/Alevín Las Palmas 2009"],
+		["img_banner/image20.jpg", "", "", "Podiums en el Cto. España Benjamín/Alevín Las Palmas 2009 y Mireia vs Sofía"],
+		["img_banner/image21.jpg", "", "", "Podiums en el Interterritorial Narón 2009"], 
+		["img_banner/image22.jpg", "", "", "Laura vs Andrea en Cartagena (feb. 2010)"],
+		["img_banner/image23.jpg", "", "", "María José vs Rosa en Cartagena (feb. 2010)"],
+		["img_banner/image24.jpg", "", "", "Mireia vs M. Carmen en Cartagena (feb. 2010)"],
+		["img_banner/image25.jpg", "", "", "Laura vs Cristina en Cartagena (feb. 2010)"],
+		["img_banner/image26.jpg", "", "", "Gloria vs Cristina en Cartagena (feb. 2010)"],
+		["img_banner/image27.jpg", "", "", "María vs Alicia en Cartagena (feb. 2010)"],
+		["img_banner/image28.jpg", "", "", "Rubén, Miguel Ángel, Áurea, Wahab y Rocío "],
+		["img_banner/image29.jpg", "", "", "Lorena, Laura, Arturo y Mihaela"],
+		["img_banner/image30.jpg", "", "", "Miguel, Celia, Rocío e Iván"],
+		["img_banner/image31.jpg", "", "", "Sara, Miguel y Adrián"], 
+		["img_banner/image32.jpg", "", "", "Jorge y Carlos en el Estatal 2010"],
+		["img_banner/image33.jpg", "", "", "Jorge, Carlos, Mireia y Adrián en el Estatal 2010"],
+		["img_banner/image34.jpg", "", "", "Todos los premiados y Mireia en el Estatal 2010"],
+		["img_banner/image35.jpg", "", "", "Adrián e Imanol en el Estatal 2010"],
+		["img_banner/image36.jpg", "", "", "Podiums Tops estatales Sierra Nevada 2010 y Miguel Chamorro"],
+		["img_banner/image37.jpg", "", "", "Los premiados de los Tops estatales Sierra Nevada 2010, Adrián, Laura y Mireia"],
+		["img_banner/image38.jpg", "", "", "Interterritorial 2011 en Zaragoza. Chang, Mireia y Jorge"],
+		["img_banner/image39.jpg", "", "", "Interterritorial 2011 en Zaragoza. Adrián, Celia y Adrián"],
+		["img_banner/image40.jpg", "", "", "Interterritorial 2011 en Zaragoza. Los premiados y entrenadores"] //<--no trailing comma after very last image element!
+	],
+	displaymode: {type:'auto', pause:3500, cycles:0, wraparound:false, randomize:true},
+	persist: false, //remember last viewed slide and recall within same session?
+	fadeduration: 1500, //transition duration (milliseconds)
+	descreveal: "ondemand",
+	togglerid: ""
+})

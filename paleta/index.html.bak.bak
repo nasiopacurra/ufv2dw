@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Generador de Colores Web, Códigos de colores para un sitio en internet, Colores de Fondo (Back-ground)y colores complementarios, Cómo combinar los colores de una página web</title>
+
+<link rel="stylesheet" href="estilos-paleta.css" type="text/css" media="all">
+<script type="text/javascript" src="colorblind.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+
+</head>
+
+<body>
+<div id="paleta">
+<div style="background: rgb(255, 153, 0) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="maincolorsample"></div>
+<div id="image">
+	<div id="wheelarea"></div>
+	<div style="left: 151px; top: 91px; display: block;" id="pointer0"></div>
+	<div style="display: none;" id="pointer1"></div>
+	<div style="display: none;" id="pointer2"></div>
+	<div style="display: none;" id="pointer3"></div>
+
+</div>
+
+<div id="maincolorhue">60°</div>
+
+<div id="scheme-select">
+	<img id="previmg-mono" src="../paleta-colores/prev_mono-on.gif" alt="" onClick="selectScheme('mono')" height="52" width="41">
+	<img id="previmg-compl" src="../paleta-colores/prev_compl.gif" alt="" onClick="selectScheme('compl')" height="52" width="41">
+	<img id="previmg-triad" src="../paleta-colores/prev_triad.gif" alt="" onClick="selectScheme('triad')" height="52" width="41">
+	<img id="previmg-tetrad" src="../paleta-colores/prev_tetrad.gif" alt="" onClick="selectScheme('tetrad')" height="52" width="41">
+	<img id="previmg-analog" src="../paleta-colores/prev_analog.gif" alt="" onClick="selectScheme('analog')" height="52" width="41">
+</div>
+
+<div style="display: none;" id="scheme-slider">
+	<div id="pointer-slider"></div>
+</div>
+
+<div style="display: none;" id="scheme-addcompl">
+	<input id="analogCompl" onChange="createScheme(false)" onClick="createScheme(false)" type="checkbox"> <label for="analogCompl">Agregar el complemento</label>
+</div>
+
+<div id="scheme-searchrgb">
+	<a href="#" onClick="searchRGB(false)">Ingresar Color RGB</a> (Conversión Neta)
+
+</div>
+
+<div style="background: rgb(255, 153, 0) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block;" id="colsample">
+
+	<div style="background: rgb(255, 153, 0) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="color0" class="col">
+		<div style="background: rgb(255, 153, 0) none repeat scroll 0%; display: block; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="color0-0" class="col-0" onClick="drawVar(0,0)"></div>
+		<div style="background: rgb(179, 107, 0) none repeat scroll 0%; display: block; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="color0-1" class="col-1 col-on" onClick="drawVar(0,1)"></div>
+		<div style="background: rgb(255, 230, 191) none repeat scroll 0%; display: block; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="color0-2" class="col-2 col-on" onClick="drawVar(0,2)"></div>
+		<div style="background: rgb(255, 204, 128) none repeat scroll 0%; display: block; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="color0-3" class="col-3 col-on" onClick="drawVar(0,3)"></div>
+
+	</div>
+
+	<div style="background: rgb(179, 107, 0) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="color1" class="col">
+		<div style="display: none;" id="color1-0" class="col-0" onClick="drawVar(1,0)"></div>
+		<div style="display: none;" id="color1-1" class="col-1" onClick="drawVar(1,1)"></div>
+		<div style="display: none;" id="color1-2" class="col-2" onClick="drawVar(1,2)"></div>
+		<div style="display: none;" id="color1-3" class="col-3" onClick="drawVar(1,3)"></div>
+	</div>
+
+	<div style="background: rgb(255, 230, 191) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="color2" class="col">
+
+		<div style="display: none;" id="color2-0" class="col-0" onClick="drawVar(2,0)"></div>
+		<div style="display: none;" id="color2-1" class="col-1" onClick="drawVar(2,1)"></div>
+		<div style="display: none;" id="color2-2" class="col-2" onClick="drawVar(2,2)"></div>
+		<div style="display: none;" id="color2-3" class="col-3" onClick="drawVar(2,3)"></div>
+	</div>
+
+	<div style="background: rgb(255, 204, 128) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="color3" class="col">
+		<div style="display: none;" id="color3-0" class="col-0" onClick="drawVar(3,0)"></div>
+		<div style="display: none;" id="color3-1" class="col-1" onClick="drawVar(3,1)"></div>
+
+		<div style="display: none;" id="color3-2" class="col-2" onClick="drawVar(3,2)"></div>
+		<div style="display: none;" id="color3-3" class="col-3" onClick="drawVar(3,3)"></div>
+	</div>
+
+
+	<div id="textBlack">Ejemplo <span class="negrita">color de texto</span></div>
+	<div id="textWhite"><span class="negrita">Ejemplo</span> color de texto blanco</div>
+
+</div>
+
+<div style="display: block;" id="coltable"><img class="coltbl-image" src="uarr.gif" alt="" onClick="shiftVar(0)"><p class="coltbl-item" style="border-color: rgb(255, 153, 0);">#FF9900</p><p class="coltbl-itemvar" style="border-color: rgb(179, 107, 0);">#B36B00</p><p class="coltbl-itemvar" style="border-color: rgb(255, 230, 191);">#FFE6BF</p><p class="coltbl-itemvar" style="border-color: rgb(255, 204, 128);">#FFCC80</p></div>
+
+<div style="display: block;" id="websnapswitch">
+	<input id="websnapper" onClick="switchWebSnap(this.checked)" onChange="switchWebSnap(this.checked)" type="checkbox"> <label for="websnapper">Sólo Colores Web</label>
+</div>
+
+<div id="presetswitch">
+	Variaciones:
+	<a href="" id="preset-default" class="btnon" onClick="switchPreset('default');return false">Defecto</a>
+
+	<a href="" id="preset-pastel" class="btn" onClick="switchPreset('pastel');return false">Pastel</a>
+	<a href="" id="preset-soft" class="btn" onClick="switchPreset('soft');return false">Pastel oscuro</a>
+	<a href="" id="preset-light" class="btn" onClick="switchPreset('light');return false">Pastel claro</a>
+	<a href="" id="preset-hard" class="btn" onClick="switchPreset('hard');return false">Contraste</a>
+	<a href="" id="preset-pale" class="btn" onClick="switchPreset('pale');return false">Pálido</a>
+</div>
+
+<a id="url" href=""></a>
+
+<form style="display: block;" id="cbmodeswitch">
+	<select id="cbmodeswitcher" onChange="switchBlindlessMode()">
+		<option value="">Visión normal (cca 85,5 % de la población)</option>
+		<option value="1">Protanopía (1 % de los hombres)</option>
+		<option value="2">Deuteranopía (1 % de los hombres)</option>
+		<option value="3">Tritanopía (cca 0,003 % de la población)</option>
+		<option value="4">Protanomalía (1 % de los hombres)</option>
+		<option value="5">Deuteranomalía (5 % de los hombres, 0.4 % de las mujeres)</option>
+		<option value="6">Tritanomalía (casi 0 %)</option>
+		<option value="7">Ceguera total al color (0,005% de la población)</option>
+		<option value="8">Monocromatismo atípico</option>
+	</select>
+
+</form>
+
+<div style="display: none;" id="colsamplevarsswitch"><div class="bottomaligner">
+	<a href="" class="btn" id="cancelsamplevars" onClick="drawSample();return false">Atrás</a>
+</div></div>
+<div style="display: none;" id="colsamplevars"></div>
+</div>
+
+</body>
+</html>
